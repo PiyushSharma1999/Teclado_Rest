@@ -7,5 +7,9 @@ class ItemSchema(Schema):
     store_id = fields.Str(required=True)
 
 class ItemUpdateSchema(Schema):
+    id = fields.Str()
+    name = fields.Float()
+
+class StoreSchema(Schema):
     id = fields.Str(dump_only=True)
     name = fields.Str(required=True)
